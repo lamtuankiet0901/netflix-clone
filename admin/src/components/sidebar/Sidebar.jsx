@@ -3,13 +3,13 @@ import { LineStyle,
     TrendingUp, 
     PermIdentity,
     PlayCircleOutline,
-    AttachMoney,
     BarChart,
     MailOutline,
     DynamicFeed,
     ChatBubbleOutline,
     WorkOutline,
-    Report, } from "@material-ui/icons"
+    Report,
+    List, } from "@material-ui/icons"
 import { Link } from "react-router-dom"
 import "./sidebar.css"
 
@@ -52,10 +52,13 @@ export default function Sidebar() {
                                 Movies
                             </li>
                         </Link>
-                        <li className="sidebarListItem">
-                            <AttachMoney  className="sidebarIcon" />
-                            Transactions
-                        </li>
+                        <Link to="/lists" className="link" >
+                            <li className="sidebarListItem">
+                                {/* <AttachMoney  className="sidebarIcon" /> */}
+                                <List  className="sidebarIcon" />
+                                Lists
+                            </li>
+                        </Link>
                         <li className="sidebarListItem">
                             <BarChart  className="sidebarIcon" />
                             Reports

@@ -5,6 +5,8 @@
 
 .addProductForm {
     margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .addProductItem {
@@ -12,6 +14,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
+    padding: 20px;
 }
 
 .addProductItem > label {
@@ -29,6 +32,7 @@
 }
 
 .addproductButton {
+    height: 30px;
     border: none;
     background-color: darkblue;
     color: white;
@@ -37,4 +41,5 @@
     border-radius: 10px;
     margin-top: 30px;
     cursor: pointer;
+    align-self: center;
 }
