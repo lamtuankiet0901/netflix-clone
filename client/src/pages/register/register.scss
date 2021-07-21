@@ -17,8 +17,9 @@
         .logo {
             height: 40px;
         }
-
+        
         .loginButton {
+            z-index: 999;
             background-color: red;
             border: none;
             color: white;
